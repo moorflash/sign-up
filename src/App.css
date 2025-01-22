@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Fascinate+Inline&family=Oi&display=swap');
+
+body {
+  /*background-image: url('https://www.teamtailor.com/assets/api/content-hub-images/file/giphy%20(3).gif');
+
+  background-size: cover;
+  height: 100vh;
+  padding:0;
+  margin:0;
+  */
+}
+
+html {
+  --s: 30px; /* control the size*/
+  --c1: #e5fcc2;
+  --c2: #ff6e61;
+  
+  --_s:37.5% 12.5% at 62.5%;
+  --_g:34% 99%,#0000 101%;
+  --g1:radial-gradient(var(--_s) 100%,#0000 32%,var(--c1) var(--_g));
+  --g2:radial-gradient(var(--_s) 0   ,#0000 32%,var(--c1) var(--_g));
+  --g3:radial-gradient(var(--_s) 100%,#0000 32%,var(--c2) var(--_g));
+  --g4:radial-gradient(var(--_s) 0   ,#0000 32%,var(--c2) var(--_g));
+  background:
+    var(--g1),
+    var(--g2) 0                calc(3*var(--s)),
+    var(--g3) var(--s)         calc(3*var(--s)),
+    var(--g4) var(--s)         calc(6*var(--s)),
+    var(--g1) calc(2*var(--s)) calc(6*var(--s)),
+    var(--g2) calc(2*var(--s)) calc(9*var(--s)),
+    var(--g3) calc(3*var(--s)) calc(9*var(--s)),
+    var(--g4) calc(3*var(--s)) 0,
+    repeating-linear-gradient(var(--c1) 0 25%,var(--c2) 0 50%);
+  background-size: calc(4*var(--s)) calc(12*var(--s));
+}
+
+.sign-up-form {
+  display: flex;
+  flex-flow: column nowrap;
+  place-items: center;
+  background-color: #88d8b0;
+  border: 8px solid #ffcb5c;
+  width: 35%;
+  border-radius: 70px;
+  margin: 0 auto;
+  margin-top: 5%;
+  margin-bottom:  5%;
+}
+
+.sign-up-form input {
+  border-radius: 10px;
+  border: 3px inset #ffcb5c;
+  width: 300px;
+  height: 25px;
+  padding: 0.5vw;
+  font-size: 90%;
+  margin-top: 5px;
+  font-family: "Aladin";
+  font-weight: 300;
+}
+
+.sign-up-form label {
+  margin-top: 20px;
+  font-family: "Aladin", serif;
+  font-weight: "Bold";
+  font-size: 20px;
+}
+
+.submit-button {
+  width: 100px;
+  height: 45px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 40px;
+  background-color: #ff6e61;
+  border-bottom: 3px solid #ffcb5c;
+  border-right: 3px solid #ffcb5c;
+  margin-bottom: 20px;
+  color: #2b3d50;
+  font-family: "Aladin";
+  font-size: 20px;
+}
+
+.submit-button:hover {
+  background-color: #40bf7b;
+}
+
+.fname-field {
+  color: #2b3d50;
+}
+
+.lname-field {
+  color: #2b3d50;
+}
+
+.email-field {
+  color: #2b3d50;
+}
+
+.password-field {
+  color: #2b3d50;
+}
+
+.heading {
+  text-align: center;
+  margin: 0;
+  font-family: 'Oi', serif;
+  font-size: 2vw;
+  color: #ff6e61;
+  text-decoration: 3px underline #ffcb5c;
+}
